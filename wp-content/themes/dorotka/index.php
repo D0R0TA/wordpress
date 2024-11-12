@@ -1,3 +1,6 @@
 <?php
+get_header();
 
-echo "hejka";
+
+
+get_footer();
