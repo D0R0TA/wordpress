@@ -1,0 +1,11 @@
+/*
+Theme Name: MojMotyw
+ Theme URI:         https://example.com/fabled-sunset
+ Description:       Basic theme for wordpress
+ Version:           1.0
+ Author:            Dorota
+ Tags:              blue, red, grey
+*/
+h1{
+    color: #0000ff;
+}
