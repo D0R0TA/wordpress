@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Anti-spam: Spam Protection - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-24 07:26:03+0000\n"
+"PO-Revision-Date: 2024-11-24 11:20:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,94 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: pl\n"
 "Project-Id-Version: Plugins - Akismet Anti-spam: Spam Protection - Stable (latest release)\n"
+
+#: views/notice.php:70
+msgid "Upgrade plan"
+msgstr "Ulepsz plan"
+
+#. translators: The placeholder is a URL to the contact form.
+#: views/notice.php:64
+msgid "If you believe your site should not be classified as commercial, <a href=\"%s\">please get in touch</a>."
+msgstr "Jeśli uważasz, że twoja strona nie powinna być sklasyfikowana jako komercyjna, proszę <a href=\"%s\">skontaktuj się z nami</a>."
+
+#. translators: The placeholder is a URL.
+#: views/notice.php:58
+msgid "Your current subscription is for <a href=\"%s\">personal, non-commercial use</a>. Please upgrade your plan to continue using Akismet."
+msgstr "Twoja obecna subskrypcja dotyczy <a href=\"%s\">użytku osobistego, niekomercyjnego</a>. Proszę zaktualizować swój plan, aby kontynuować korzystanie z Akismet."
+
+#: views/notice.php:54
+msgid "We detected commercial activity on your site"
+msgstr "Wykryliśmy działalność komercyjną na twojej stronie."
+
+#: views/notice.php:27
+msgid "Almost done! Configure Akismet and say goodbye to spam"
+msgstr "Prawie gotowe! Skonfiguruj Akismet i pożegnaj się ze spamem."
+
+#: views/setup.php:7
+msgid "Choose an Akismet plan"
+msgstr "Wybierz plan Akismet"
+
+#: class.akismet-admin.php:770
+msgid "This comment was not sent to Akismet when it was submitted because it was caught by the comment disallowed list."
+msgstr "Ten komentarz nie został wysłany do Akismet ponieważ zawiera słowa z listy niedozwolonych wyrazów."
+
+#: class.akismet-admin.php:767
+msgid "This comment was not sent to Akismet when it was submitted because it was caught by something else."
+msgstr "Ten komentarz nie został wysłany do Akismet podczas jego przesyłania, ponieważ został złapany przez coś innego."
+
+#. translators: the placeholder is the URL to the Akismet pricing page.
+#: views/notice.php:180
+msgid "Please <a href=\"%s\" target=\"_blank\">choose a plan</a> to get started with Akismet."
+msgstr "Proszę <a href=\"%s\" target=\"_blank\">wybierz plan</a>, aby rozpocząć korzystanie z Akismet."
+
+#: views/notice.php:176
+msgid "Your API key must have an Akismet plan before it can protect your site from spam."
+msgstr "Twój klucz API musi mieć przypisany plan Akismet, zanim będzie mógł chronić swoją stronę przed spamem."
+
+#: class.akismet-rest-api.php:509
+msgid "Multiple comments matched request."
+msgstr "Do zapytania pasuje wiele komentarzy."
+
+#: class.akismet-rest-api.php:457
+msgid "The 'comments' parameter must be an array."
+msgstr "Parametr 'comments' musi być tablicą."
+
+#: class.akismet-admin.php:764
+msgid "Akismet cleared this comment during a recheck. It did not update the comment status because it had already been modified by another user or plugin."
+msgstr "Akismet usunął ten komentarz podczas ponownego sprawdzania. Nie zaktualizował statusu komentarza, ponieważ został już zmodyfikowany przez innego użytkownika lub wtyczkę."
+
+#: class.akismet-admin.php:761
+msgid "Akismet determined this comment was spam during a recheck. It did not update the comment status because it had already been modified by another user or plugin."
+msgstr "Akismet uznał ten komentarz za spam podczas ponownego sprawdzania. Nie zaktualizował statusu komentarza, ponieważ został już zmodyfikowany przez innego użytkownika lub wtyczkę."
+
+#: class.akismet-admin.php:758
+msgid "Akismet cleared this comment and updated its status via webhook."
+msgstr "Akismet usunął ten komentarz i zaktualizował jego status za pomocą webhooka."
+
+#: class.akismet-admin.php:755
+msgid "Akismet caught this comment as spam and updated its status via webhook."
+msgstr "Akismet oznaczył ten komentarz jako spam i zaktualizował jego status za pomocą webhooka."
+
+#. translators: %1$s: spam folder link, %2$d: delete interval in days
+#: views/config.php:188
+msgid "Spam in the %1$s older than %2$d day is deleted automatically."
+msgid_plural "Spam in the %1$s older than %2$d days is deleted automatically."
+msgstr[0] "Spam w %1$s starszy niż %2$d dzień jest usuwany automatycznie."
+msgstr[1] "Spam w %1$s starszy niż %2$d dni jest usuwany automatycznie."
+msgstr[2] "Spam w %1$s starszy niż %2$d dni jest usuwany automatycznie."
+
+#: views/config.php:228
+msgid "To help your site with transparency under privacy laws like the GDPR, Akismet can display a notice to your users under your comment forms."
+msgstr "Aby pomóc twojej stronie w zapewnieniu przejrzystości zgodnie z przepisami o prywatności, takimi jak RODO, Akismet może wyświetlać komunikat dla użytkowników poniżej formularzy komentarzy."
+
+#. Author of the plugin
+#: akismet.php
+msgid "Automattic - Anti-spam Team"
+msgstr "Automattic - Anti-Spam-Team"
+
+#: views/notice.php:47
+msgid "WP-Cron has been disabled using the DISABLE_WP_CRON constant. Comment rechecks may not work properly."
+msgstr "WP-Cron został wyłączony za pomocą stałej DISABLE_WP_CRON. Ponowne sprawdzanie komentarzy może nie działać poprawnie."
 
 #: views/get.php:17
 msgid "(opens in a new tab)"
