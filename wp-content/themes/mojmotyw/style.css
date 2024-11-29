@@ -2,7 +2,7 @@
 Theme Name: MojMotyw
  Theme URI:         https://example.com/fabled-sunset
  Description:       Basic theme for wordpress
- Version:           1.1
+ Version:           1.2
  Author:            Dorota
  Tags:              blue, red, grey
 */
@@ -47,7 +47,7 @@ ul {
 .db-main-menu {
 	text-align: center;
 }
-.db-main-header .menu-item a {
+.db-main-header #menu-menu-glowne .menu-item a {
 	text-decoration: none;
 	color: var(--theme-color1);
 	font-size: 1.2em;
@@ -55,6 +55,48 @@ ul {
 	font-weight: 600;
 	text-transform: uppercase;
 }
-.db-main-header .menu-item {
+.db-main-header #menu-menu-glowne .menu-item {
 	display: inline-block;
+}
+
+.db-single {
+	background-color: rgb(255, 255, 255);
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+.db-single h6 {
+	text-align: center;
+}
+
+.db-single a {
+	text-decoration: none;
+	color: gray;
+}
+
+.db-single li {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.thumbnail-img {
+	text-align: center;
+	padding: 20px 0;
+}
+.db-single .entry-title {
+	text-align: center;
+	color: var(--theme-color1);
+	padding-bottom: 20px;
+}
+
+.db-single-content {
+	padding: 20px;
+}
+
+.widget-content {
+}
+
+.widget-title {
+	color: var(--theme-color1);
+	font-size: 1.3em;
+	text-transform: uppercase;
 }

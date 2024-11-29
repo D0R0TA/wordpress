@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-            <?php wp_nav_menu( array('theme_location'=>'footer') ); ?>
+                <?php wp_nav_menu( array('theme_location'=>'footer') ); ?>
             </div>
             <div class="col-md-6">
-            <div class="db-widgets">
-            <?php dynamic_sidebar( 'sidebar-2' ); ?>
-            </div>
+                <div class="db-widgets">
+                <?php dynamic_sidebar('sidebar-2'); ?>
+                </div>
             </div>
         </div>
 

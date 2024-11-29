@@ -1,25 +1,30 @@
 <?php
 get_header();
 ?>
-<div class="container">
+<div class="container db-single">
 <?php
 if ( have_posts() ) {
 
 	while ( have_posts() ) {
 		the_post();
             ?>
-            <?php the_title('<h2 class="entry-title">', '</h2>' ); 
-            ?>
+          
              <div class="thumbnail-img">
                 <?php if (has_post_thumbnail() ) {
-                    the_post_thumbnail();
+                    the_post_thumbnail( 'large', array('class'=>'img-fluid'));
                 }
                 ?>
             </div>
-            <h4>Kategoria: <?php the_category(); ?></h4>
-            <h4>Data publikacji: <?php the_time('j F Y'); ?></h4>
-            <p><?php the_content(); ?></p>
+            <?php the_title('<h2 class="entry-title">', '</h2>' ); 
+            ?>
+
+            <h6>Kategoria: <?php the_category(); ?></h6>
+            <h6>Data publikacji: <?php the_time('j F Y'); ?></h6>
+            <h6>Autor: <?php the_author(); ?></h6>
             <hr>
+            <div class="db-single-content">
+            <?php the_content(); ?></div>
+          
     <?php
         }
    
