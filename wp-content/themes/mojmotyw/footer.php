@@ -1,5 +1,6 @@
-<div class="container-fluid db-main-footer">
+<div class="container db-main-footer">
     <div class="container">
+ 
         <div class="row">
             <div class="col-md-6">
                 <?php wp_nav_menu( array('theme_location'=>'footer') ); ?>

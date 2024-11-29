@@ -29,6 +29,10 @@ if ( have_posts() ) {
 
 
             <h6 class="d-md-none d-lg-block">Kategoria: <?php the_category(); ?></h6>
+            <?php
+            $catList = wp_get_post_categories(get_the_ID());
+            echo get_category_icon($catList);
+            ?>
             <h6 class="d-md-none d-lg-block">Data publikacji: <?php the_time('j F Y'); ?></h6>
             <p><?php the_excerpt(); ?></p>
 

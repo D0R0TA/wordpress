@@ -8,13 +8,15 @@ Theme Name: MojMotyw
 */
 :root {
 	--theme-color1: #44aaaa;
+	--theme-color2: #474747;
 }
 .db-main-header {
 	background-color: rgb(223, 191, 157);
 }
 
 .db-main-footer {
-	background-color: #be9975;
+	background-color: rgb(223, 191, 157);
+	padding-top: 10px;
 }
 .db-article-item {
 	background-color: white;
@@ -92,11 +94,31 @@ ul {
 	padding: 20px;
 }
 
-.widget-content {
+.widget ul {
+	list-style: none;
+	padding: 10px 0;
 }
 
-.widget-title {
-	color: var(--theme-color1);
-	font-size: 1.3em;
+.widget a {
+	padding: 5px 0;
+	color: var(--theme-color2);
+	text-decoration: none;
 	text-transform: uppercase;
+}
+
+.db-sidebar-column {
+	padding-top: 20px;
+}
+
+.widget-content p {
+	margin-bottom: 0;
+	color: var(--theme-color1);
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+.db-page {
+	min-height: 500px;
+}
+.db-bottom img{
+text-align: center;
 }

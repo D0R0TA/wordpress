@@ -57,3 +57,31 @@ function mojmotyw_register_widgets() {
 
 }
 add_action('widgets_init','mojmotyw_register_widgets');
+
+function db_get_page($arg){
+    global $wpdb;
+    $posts = $wpdb->get_row("
+    SELECT * 
+    FROM `$wpdb->posts`p 
+    WHERE p.post_title='$arg' AND p.post_type='page' AND p.post_status='publish';");
+
+if($posts != 0){
+return $posts->post_content;
+}
+}
+
+function get_category_icon($catList) {
+$icons = "";
+foreach(  $catList as $c){
+    if($c==1){
+        $icons .= '<i class="bi bi-x-diamond-fill" style="color: cornflowerblue;"></i>'." ";
+    }
+    elseif ($c==4){
+        $icons .= '<i class="bi bi-water" style="color: cornflowerblue;"></i>'." ";
+    }
+    else {
+        $icons .= '<i class="bi bi-window-dock" style="color: cornflowerblue;"></i>'." ";
+    }
+}
+return $icons;
+}

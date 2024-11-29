@@ -2,29 +2,20 @@
 get_header();
 
 ?>
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
+<div class="container db-page">
 
-        <?php
-        if ( have_posts() ) {
-            while ( have_posts() ) {
-                the_post();
-                ?>
-                <h1><? the_title(); ?></h1>
-                <p><?php the_content(); ?></p>
-                <?php
-            
-             }
-        }
-        ?>
-
-        </div>
-        <div class="col-md-4">
-            <?php get_sidebar(); ?>
-        </div>
-    </div>
-
+    <?php
+    if ( have_posts() ) {
+        while ( have_posts() ) {
+            the_post();
+            ?>
+            <h1><? the_title(); ?></h1>
+            <p><?php the_content(); ?></p>
+            <?php
+        
+            }
+    }
+    ?>
 </div>
 <?php
 get_footer();
